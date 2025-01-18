@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Игоря и Анны</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Свадьба Игоря и Анны</h1>
+        <div id="countdown"></div>
+    </header>
+
+    <main>
+        <section class="couple-info">
+            <div class="photo">
+              <img src="img/photo-J.png" alt="Фото жениха">
+              <img src="img/photo-N.png" alt="Фото невесты">
+            </div>
+            <h2>Имена жениха и невесты</h2>
+            <p>Игорь & Анна</p>
+        </section>
+      
+      <section class="location-info">
+          <h2>Место свадьбы</h2>
+          <img src="img/photo-M.png" alt="Фото места свадьбы">
+          <p>Баден-Баден</p>
+          <p>с. Еткуль, база отдыха Лесная сказка, 1</p>
+      </section>
+
+        <section class="schedule">
+            <h2>Расписание свадебного дня</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Событие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Регистрация</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>Банкет</td>
+                    </tr>
+                    <tr>
+                        <td>23:00</td>
+                        <td>Завершение вечера</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+      
+        <section class="dresscode">
+            <h2>Дресс-код</h2>
+            <p>Цвета для дресс-кода: [Цвета]</p>
+        </section>
+
+        <section class="rsvp">
+            <h2>Опрос для гостей</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Ваше ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+              
+               <div class="form-group">
+                   <label class="question">Вы сможете присутствовать на свадьбе?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="attending-yes" name="attending" value="yes" required>
+                        <label for="attending-yes">Да</label>
+                        <input type="radio" id="attending-no" name="attending" value="no" required>
+                        <label for="attending-no">Нет</label>
+                  </div>
+               </div>
+              
+               <div class="form-group">
+                    <label class="question">Какой алкоголь вы предпочитаете?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="alcohol-semi-sweet-champagne" name="alcohol" value="champagne_semi_sweet">
+                        <label for="alcohol-semi-sweet-champagne">Шампанское п/сладкое</label>
+                        <input type="checkbox" id="alcohol-semi-dry-champagne" name="alcohol" value="champagne_semi_dry">
+                        <label for="alcohol-semi-dry-champagne">Шампанское п/сухое</label>
+                        <input type="checkbox" id="alcohol-semi-sweet-wine" name="alcohol" value="wine_semi_sweet">
+                        <label for="alcohol-semi-sweet-wine">Вино п/сладкое</label>
+                        <input type="checkbox" id="alcohol-semi-dry-wine" name="alcohol" value="wine_semi_dry">
+                        <label for="alcohol-semi-dry-wine">Вино п/сухое</label>
+                        <input type="checkbox" id="alcohol-beer" name="alcohol" value="beer">
+                        <label for="alcohol-beer">Пиво</label>
+                        <input type="checkbox" id="alcohol-whiskey" name="alcohol" value="whiskey">
+                        <label for="alcohol-whiskey">Виски</label>
+                         <input type="checkbox" id="alcohol-none" name="alcohol" value="none">
+                        <label for="alcohol-none">Не пью</label>
+                         <input type="checkbox" id="alcohol-other" name="alcohol" value="other">
+                        <label for="alcohol-other">Напишу своё</label>
+                        <input type="text" id="alcohol-other-text" name="alcohol-other-text" style="display: none;">
+                    </div>
+                </div>
+              
+                <div class="form-group">
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <p>Жених: <a href="tel:[Номер телефона жениха]">Игорь</a></p>
+            <p>Невеста: <a href="tel:[Номер телефона невесты]">Анна</a></p>
+            <p>Организатор: <a href="tel:89068639393">Екатерина</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Свадьба Игорь & Анна</p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
